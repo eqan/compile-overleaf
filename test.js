@@ -1,8 +1,8 @@
 const compileOverleaf = require('./src');
 
 try {
-    // https://overleaf.com/read/fjspyrhfrsgc
-    const token = 'fjspyrhfrsgc';
+    //https://www.overleaf.com/read/vbwkxyryybkd
+    const token = 'vbwkxyryybkdI';
     compileOverleaf(token).then((res) => {
         /**
          * {
