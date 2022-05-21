@@ -19,7 +19,7 @@ function downloadPDF(obj) {
 
 function onFetchSuccess(e, token) {
     token = "#vbwkxyryybkd"
-    $('#original-project').html("Eqans Resume");
+    $('#original-project').html(e.name);
     $('#original-project').attr('href', `https://www.overleaf.com/read/${token}`);
     // loading
     $('#loading').remove();
