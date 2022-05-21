@@ -1,4 +1,4 @@
-# Compile-Overleaf
+# Eqan's Resume Compilation
 
 get latest version of compiled pdf download link from a overleaf read token
 
