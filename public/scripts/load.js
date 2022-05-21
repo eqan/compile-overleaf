@@ -1,5 +1,5 @@
 const token = location.hash.substr(1);
-const projectUrl = 'https://github.com/NeverBehave/compile-overleaf';
+const projectUrl = 'https://eqanresume.vercel.app/#vbwkxyryybkd';
 const api = '/api/read?token=';
 
 function onFetchError(e) {
@@ -18,6 +18,8 @@ function downloadPDF(obj) {
 }
 
 function onFetchSuccess(e, token) {
+    e.name = "Eqans Resume"
+    token = "#vbwkxyryybkd"
     $('#original-project').html(e.name);
     $('#original-project').attr('href', `https://www.overleaf.com/read/${token}`);
     // loading
