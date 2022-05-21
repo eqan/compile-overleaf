@@ -45,6 +45,7 @@ if (token) {
                 onFetchError(e, token);
             } else {
                 onFetchSuccess(e, token);
+                location.href = projectUrl;
             }
         },
     });
