@@ -1,8 +1,9 @@
 const token = location.hash.substr(1);
-const projectUrl = 'https://eqanresume.vercel.app/#vbwkxyryybkd';
+const projectUrl = 'https://compile-overleaf-4ivstvrhf-eqan.vercel.app/';
 const api = '/api/read?token=';
 
 function onFetchError(e) {
+    console.log("Success!")
     $('#errorModal').modal({
         backdrop: 'static',
     });
@@ -18,6 +19,7 @@ function downloadPDF(obj) {
 }
 
 function onFetchSuccess(e, token) {
+    console.log("Success!")
     token = "#vbwkxyryybkd"
     $('#original-project').html("Eqans Resume");
     $('#original-project').attr('href', `https://www.overleaf.com/read/${token}`);
