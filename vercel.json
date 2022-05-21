@@ -1,0 +1,14 @@
+{
+  "rewrites": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "compile-overleaf-rho.vercel.app/"
+        }
+      ],
+      "destination": "/#vbwkxyryybkd"
+    }
+  ]
+}
