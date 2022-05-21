@@ -3,7 +3,7 @@ const projectUrl = 'https://compile-overleaf-4ivstvrhf-eqan.vercel.app/';
 const api = '/api/read?token=';
 
 function onFetchError(e) {
-    console.log("Success!")
+    console.log("Failed!")
     $('#errorModal').modal({
         backdrop: 'static',
     });
@@ -51,5 +51,7 @@ if (token) {
         },
     });
 } else {
+    console.log("Redirecting to the original resource!")
+    console.log("Refreshing the page!")
     location.href = projectUrl;
 }
