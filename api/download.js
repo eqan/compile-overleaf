@@ -7,7 +7,7 @@ const buildHeader = (filename) => {
 };
 
 module.exports = async (req, res) => {
-    let { link = '', filename = 'output.pdf' } = req.query;
+    let { link = '', filename = 'Eqan Resume.pdf' } = req.query;
     try {
         link = new URL(link);
     } catch (e) {
